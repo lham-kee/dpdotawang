@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grievance|Panchayati Raj Tawang</title>  
+ <link rel="stylesheet" href="../css/styles-all.css">
+<script src="script/grievance_script.js" defer></script>
+
+
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="Zilla Parishad Logo">
+            <h1>Panchayat Raj Tawang</h1>
+
+        </div>
+
+        <div class="header-images">
+            <img src="../images/goap.png" alt="Image 1">
+            <img src="../images/sdg.png" alt="Image 2">
+            <img src="../images/yojna.png" alt="Image 3">
+	    <img src="../images/emblem.png" alt="Image 4">
+        </div>
+    </header>
+
+
+
+<!-- Navigation Section -->
+ <nav>
+        <!-- Hamburger icon for mobile -->
+        <div class="hamburger" id="hamburger-icon"onclick>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+	<li><a href="ss.html">Schemes & Services</a></li>
+	<li><a href="rti.html">RTI</a></li>
+	<li><a href="gallery.html">Gallery</a></li>
+	<li><a href="#">Grievance</a></li>
+        <li><a href="contact-us.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+
+
+
+ <!-- Grievance Form Section -->
+    <section class="grievance-section">
+        <div class="container">
+            <h2>Grievance Submission Form</h2>
+            <form id="grievance-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Grievance Details:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <div class="captcha">
+                    <label for="captcha">Enter CAPTCHA:</label>
+                    <div id="captcha-display"></div>
+                    <input type="text" id="captcha-input" name="captcha" required>
+                </div>
+
+                <button type="submit" class="submit-button">Submit Grievance</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Grievance Check Section -->
+    <section class="check-grievance-section">
+        <div class="container">
+            <h2>Check Grievance Status</h2>
+            <form id="check-grievance-form">
+                <label for="grievance-number">Grievance Number:</label>
+                <input type="text" id="grievance-number" name="grievance-number" required>
+                <button type="button" class="check-button" onclick="checkGrievanceStatus()">Check Status</button>
+            </form>
+            <div id="grievance-status-result"></div>
+        </div>
+    </section>
+
+
+
+
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-icons">
+        <a href="#"><img src="../images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="../images/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="../images/instagram.png" alt="Instagram"></a>
+    </div>
+
+     <p>&copy; 2025 Tawang. All rights reserved.</p>
+
+</footer>
+
+
+<!-- Link to the JavaScript file -->
+    <script src="script/script.js"></script> <!-- This links your script.js file -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
